@@ -1,0 +1,151 @@
+:root {
+  --primary-color: #ff9800;
+  --secondary-color: #f57c00;
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --light-gray: #e0e0e0;
+  --success-color: #4caf50;
+  --danger-color: #f44336;
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  padding: 0.7rem 0;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card-title {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Button Styles */
+.btn {
+  border-radius: 5px;
+  font-weight: 500;
+  padding: 0.5rem 1.2rem;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-success {
+  background-color: var(--success-color);
+  border-color: var(--success-color);
+}
+
+.btn-danger {
+  background-color: var(--danger-color);
+  border-color: var(--danger-color);
+}
+
+/* Table Styles */
+.student-table {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table th {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 500;
+  border: none;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(255, 152, 0, 0.05);
+}
+
+.btn-action {
+  margin: 0 0.3rem;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.875rem;
+}
+
+/* Form Styles */
+.form-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.form-label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.form-control, .form-select {
+  border-radius: 5px;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--light-gray);
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(255, 152, 0, 0.25);
+}
+
+.invalid-feedback {
+  display: block;
+  color: var(--danger-color);
+}
+
+/* Status Badge */
+.badge {
+  padding: 0.5rem 0.7rem;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+} 
